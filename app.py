@@ -12,19 +12,21 @@ st.sidebar.header('Car Data')
 
 # FUNCTION
 def user_report():
+    
     Present_Price = st.number_input('Present Price in Lakhs', 0.0, 10000000.0)
     # Present_Price = st.sidebar.slider('Present_Price_in_Lakhs', 1, 40, 1)
     Kms_Driven = st.number_input('KM Driven', 0, 10000000)
 
     # Kms_Driven = st.sidebar.slider('Kms_Driven', 1000, 100000, 1)
     Owner = st.sidebar.slider('Owner', 0, 1, 0)
-    No_year = st.sidebar.slider('No_year', 0, 30, 0)
-    Fuel_Type_Diesel = st.sidebar.slider('Fuel_Type_Diesel', 0, 1, 1)
+    No_year = st.sidebar.slider('Age of Car', 0, 30, 0)
+    Fuel_Type_Diesel = st.sidebar.slider('For Diesel(1)/CNG(0)', 0, 1, 1)
     Fuel_Type_Petrol = st.sidebar.slider(
-        'Fuel_Type_Petrol Year', 0, 1, 0)
+        'For Petrol(1)/CNG(0)', 0, 1, 0)
     Seller_Type_Individual = st.sidebar.slider(
-        'Seller_Type_Individual', 0, 1, 0)
-    Transmission_Manual = st.sidebar.slider('Transmission_Manual', 0, 1, 0)
+        'Seller Type Multiple(0)/Individual(1)', 0, 1, 0)
+    Transmission_Manual = st.sidebar.slider(
+        'For Automatic(0)/Manual(1)', 0, 1, 0)
 
     user_report_data = {
         'Present_Price': Present_Price,
