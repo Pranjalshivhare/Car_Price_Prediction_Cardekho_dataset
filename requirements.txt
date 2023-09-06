@@ -5,3 +5,5 @@ seaborn
 pandas
 
 streamlit
+
+sklearn
