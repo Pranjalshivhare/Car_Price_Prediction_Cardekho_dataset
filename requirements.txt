@@ -6,4 +6,4 @@ pandas
 
 streamlit
 
-scikit-lear
+scikit-learn
