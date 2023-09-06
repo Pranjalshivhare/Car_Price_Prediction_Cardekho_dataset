@@ -45,5 +45,6 @@ st.header('Car Data')
 st.write(user_data)
 
 salary = model.predict(user_data)
-st.subheader('Player Salary')
-st.subheader('Rs. '+str(np.round(salary[0], 2)))
+st.subheader('Car Price will be ')
+st.subheader('Rs. '+str(np.round(salary[0], 2)) + 'as per the data.')
+
